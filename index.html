@@ -348,18 +348,17 @@
     <script>
         // Initialize Firebase
         const firebaseConfig = {
-            apiKey: "YOUR_API_KEY",
-            authDomain: "YOUR_AUTH_DOMAIN",
-            databaseURL: "YOUR_DATABASE_URL",
-            projectId: "YOUR_PROJECT_ID",
-            storageBucket: "YOUR_STORAGE_BUCKET",
-            messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-            appId: "YOUR_APP_ID"
+            apiKey: "AIzaSyDLcBA3zC2-mHsdNCpYdtdPefNHnbpiFUo",
+            authDomain: "medical-equipment-95ce0.firebaseapp.com",
+            databaseURL: "https://medical-equipment-95ce0-default-rtdb.firebaseio.com",
+            projectId: "medical-equipment-95ce0",
+            storageBucket: "medical-equipment-95ce0.firebasestorage.app",
+            messagingSenderId: "8827720079",
+            appId: "1:8827720079:web:adcb01bd6d35e8ace83bfa"
         };
 
         firebase.initializeApp(firebaseConfig);
-        const database = firebase.database();
-
+       const app = initializeApp(firebaseConfig);
         // Add new equipment
         document.getElementById('addDeviceForm').addEventListener('submit', (e) => {
             e.preventDefault();
